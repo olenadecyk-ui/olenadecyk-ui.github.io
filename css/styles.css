@@ -10801,6 +10801,8 @@ header.masthead .post-heading .meta a {
 .site-heading h1,
 .page-heading h1 {
     font-family: "Rock Salt", cursive !important;
+    white-space: nowrap;
+    font-size: 3rem;
 }
 
 /* Subheadings */
