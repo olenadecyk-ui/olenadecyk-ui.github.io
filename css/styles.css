@@ -10806,8 +10806,7 @@ header.masthead .post-heading .meta a {
 }
 
 /* Subheadings */
-h2, h3, h4, h5, h6,
-.subheading {
+h2, h3, h4, h5, h6, {
     font-family: "Playfair Display", serif !important;
     font-weight: 700;
 }
