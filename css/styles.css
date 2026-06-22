@@ -10809,3 +10809,10 @@ h2, h3, h4, h5, h6,
     font-family: "Playfair Display", serif !important;
     font-weight: 700;
 }
+
+.site-heading .subheading,
+.page-heading .subheading {
+    font-family: "Sedgwick Ave", cursive !important;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
