@@ -10796,3 +10796,16 @@ header.masthead .post-heading .meta a {
     font-size: 2.25rem;
   }
 }
+
+/* Main title */
+.site-heading h1,
+.page-heading h1 {
+    font-family: "Rock Salt", cursive !important;
+}
+
+/* Subheadings */
+h2, h3, h4, h5, h6,
+.subheading {
+    font-family: "Playfair Display", serif !important;
+    font-weight: 700;
+}
