@@ -10903,3 +10903,66 @@ html {
         transform: translateY(0);
     }
 }
+
+/* PAGE BASE */
+body {
+    background-color: #f7f6f2;
+    color: #1a1a1a;
+    line-height: 1.7;
+}
+
+/* smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* container consistency */
+.container {
+    max-width: 1100px;
+}
+
+/* image polish */
+img {
+    transition: transform 0.35s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* CINEMATIC HERO */
+.masthead {
+    position: relative;
+    min-height: 85vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* dark cinematic overlay */
+.masthead::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* keep text above overlay */
+.site-heading {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* hero typography */
+.site-heading h1 {
+    font-family: "Rock Salt", cursive;
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+}
+
+.site-heading .subheading {
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
