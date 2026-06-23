@@ -11051,7 +11051,7 @@ img:hover {
 }
 
 .explore-card {
-    height: 260px;
+    height: 320px;
 
     display: flex;
     align-items: center;
@@ -11059,9 +11059,11 @@ img:hover {
 
     text-decoration: none;
 
-    border-radius: 20px;
+    border-radius: 30px;
 
     transition: all .3s ease;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.15);
 }
 
 .explore-card span {
@@ -11093,4 +11095,10 @@ img:hover {
 
 .blog-card span {
     color: var(--brown);
+}
+
+.explore-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.2;
+    margin-bottom: 70px;
 }
