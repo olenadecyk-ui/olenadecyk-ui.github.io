@@ -11018,3 +11018,13 @@ img:hover {
     font-family: 'Playfair Display', serif;
     margin: 0;
 }
+
+:root{
+    --forest: #21642D;
+    --moss: #4C7C55;
+    --blue: #006AB9;
+    --orange: #EA5C1A;
+    --yellow: #F8C340;
+    --cream: #CCC4B1;
+    --brown: #583719;
+}
