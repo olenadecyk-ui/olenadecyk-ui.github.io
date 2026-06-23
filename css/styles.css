@@ -10889,7 +10889,7 @@ html {
 
 /* SECTION SYSTEM */
 .section-block {
-    margin: 140px auto;
+    margin: 150px auto;
     max-width: 1050px;
     opacity: 0;
     transform: translateY(18px);
@@ -10965,4 +10965,13 @@ img:hover {
     font-size: 1.25rem;
     opacity: 0.9;
     margin-top: 10px;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section-block + .section-block {
+    margin-top: 170px;
 }
