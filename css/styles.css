@@ -11102,3 +11102,9 @@ img:hover {
     line-height: 1.2;
     margin-bottom: 70px;
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
