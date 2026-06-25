@@ -11120,3 +11120,7 @@ header.masthead {
 header.masthead:before {
     opacity: 0.25 !important;
 }
+
+#mainNav {
+  font-family: "Playfair Display", serif;
+}
