@@ -11185,38 +11185,41 @@ body {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: all 0.35s ease;
 }
 
+/* Large star */
 .star-1 {
-  width: 50px;
-  top: -20px;
-  right: -15px;
+  width: 110px;
+  top: -40px;
+  right: -35px;
 }
 
+/* Medium star */
 .star-2 {
-  width: 35px;
-  bottom: -15px;
-  left: -15px;
+  width: 85px;
+  bottom: -30px;
+  left: -30px;
 }
 
+/* Small accent star */
 .star-3 {
-  width: 25px;
-  top: 50%;
-  right: -20px;
+  width: 65px;
+  top: 15px;
+  left: 15px;
 }
 
 .explore-card:hover .star-1 {
   opacity: 1;
-  transform: translateY(-8px) rotate(-10deg);
+  transform: translateY(-15px) rotate(-15deg);
 }
 
 .explore-card:hover .star-2 {
   opacity: 1;
-  transform: translateX(-8px) rotate(12deg);
+  transform: translateX(-12px) rotate(15deg);
 }
 
 .explore-card:hover .star-3 {
   opacity: 1;
-  transform: translateX(8px) rotate(-8deg);
+  transform: translateY(-8px) rotate(-10deg);
 }
