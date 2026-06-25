@@ -11180,3 +11180,43 @@ header.masthead:before {
 body {
   background-color: #CBC5B3;
 }
+
+.hover-star {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.star-1 {
+  width: 50px;
+  top: -20px;
+  right: -15px;
+}
+
+.star-2 {
+  width: 35px;
+  bottom: -15px;
+  left: -15px;
+}
+
+.star-3 {
+  width: 25px;
+  top: 50%;
+  right: -20px;
+}
+
+.explore-card:hover .star-1 {
+  opacity: 1;
+  transform: translateY(-8px) rotate(-10deg);
+}
+
+.explore-card:hover .star-2 {
+  opacity: 1;
+  transform: translateX(-8px) rotate(12deg);
+}
+
+.explore-card:hover .star-3 {
+  opacity: 1;
+  transform: translateX(8px) rotate(-8deg);
+}
