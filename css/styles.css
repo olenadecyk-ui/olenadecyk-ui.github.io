@@ -11150,3 +11150,15 @@ header.masthead:before {
 .blog-card {
   background-image: url("../assets/blog-tile.jpg");
 }
+
+.explore-card {
+  position: relative;
+}
+
+.explore-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  border-radius: 12px;
+}
