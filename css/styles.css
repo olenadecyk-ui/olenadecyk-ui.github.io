@@ -11124,3 +11124,12 @@ header.masthead:before {
 #mainNav {
   font-family: "Mansalva", cursive;
 }
+
+.explore-card {
+  display: block;
+  height: 250px;          /* adjust size */
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
