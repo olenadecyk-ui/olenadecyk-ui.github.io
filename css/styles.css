@@ -11126,14 +11126,13 @@ header.masthead:before {
 }
 
 .explore-card {
-  display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 12px;
   background-size: cover;
   background-position: center;
   text-decoration: none;
-  box-sizing: border-box;
+  position: relative;
 }
 
 .school-card {
