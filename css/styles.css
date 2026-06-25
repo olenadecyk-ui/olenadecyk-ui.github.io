@@ -11176,3 +11176,7 @@ header.masthead:before {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
+body {
+  background-color: #CBC5B3;
+}
