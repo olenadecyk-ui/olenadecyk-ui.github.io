@@ -11140,7 +11140,7 @@ header.masthead:before {
 }
 
 .art-card {
-  background-image: url("../assets/art-tile.jpg");
+  background-image: url("../assets/nature-tile.jpg");
 }
 
 .nature-card {
@@ -11161,6 +11161,14 @@ header.masthead:before {
   inset: 0;
   background: rgba(0,0,0,0.2);
   border-radius: 12px;
+}
+
+.explore-card::before {
+  transition: background 0.3s ease;
+}
+
+.explore-card:hover::before {
+  background: rgba(0,0,0,0);
 }
 
 .explore-grid {
