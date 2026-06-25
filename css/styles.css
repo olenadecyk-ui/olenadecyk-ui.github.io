@@ -11133,3 +11133,19 @@ header.masthead:before {
   background-position: center;
   text-decoration: none;
 }
+
+.school-card {
+  background-image: url("../assets/school-tile.jpg");
+}
+
+.art-card {
+  background-image: url("../assets/art-tile.jpg");
+}
+
+.nature-card {
+  background-image: url("../assets/nature-tile.jpg");
+}
+
+.blog-card {
+  background-image: url("../assets/blog-tile.jpg");
+}
