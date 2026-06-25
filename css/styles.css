@@ -11109,6 +11109,14 @@ body {
     padding: 0;
 }
 
-#mainNav {
-    background: red !important;
+/* HERO OVERRIDE */
+
+header.masthead {
+    padding-top: 8rem !important;
+    padding-bottom: 6rem !important;
+    margin-bottom: 0 !important;
+}
+
+header.masthead:before {
+    opacity: 0.25 !important;
 }
