@@ -11127,12 +11127,13 @@ header.masthead:before {
 
 .explore-card {
   display: block;
-  aspect-ratio: 1 / 1;   /* makes it square */
   width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 12px;
   background-size: cover;
   background-position: center;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .school-card {
@@ -11161,4 +11162,10 @@ header.masthead:before {
   inset: 0;
   background: rgba(0,0,0,0.2);
   border-radius: 12px;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
