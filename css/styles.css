@@ -11223,3 +11223,15 @@ body {
   opacity: 1;
   transform: translateY(-8px) rotate(-10deg);
 }
+
+.divider-border {
+  height: 10px;
+  background-image: url("../assets/divider.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+header.masthead {
+  margin-bottom: 0 !important;
+}
