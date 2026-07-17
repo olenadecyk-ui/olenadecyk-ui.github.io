@@ -59,17 +59,17 @@ body{
 
     max-width:1200px;
 
-    margin:100px auto;
+    margin:90px auto;
 
-    padding:60px;
+    padding:70px;
 
-    background:rgba(252,248,239,.90);
+    background:rgba(252,248,239,.88);
 
-    border-radius:20px;
+    backdrop-filter:blur(12px);
 
-    backdrop-filter:blur(8px);
+    border-radius:22px;
 
-    box-shadow:0 20px 45px rgba(0,0,0,.18);
+    box-shadow:0 25px 60px rgba(0,0,0,.22);
 
 }
 
@@ -85,5 +85,21 @@ a{
 a:hover{
 
     color:var(--orange);
+
+}
+
+/* =========================================
+   PAGE BACKGROUND
+   ========================================= */
+
+body{
+
+    background-image:url("../assets/img/main-background.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
 
 }
