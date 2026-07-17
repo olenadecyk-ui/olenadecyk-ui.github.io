@@ -1,1 +1,89 @@
+/* =====================================================
+   OLENA DECYK WEBSITE
+   Custom Styles
+   ===================================================== */
 
+
+/* ---------- Color Palette ---------- */
+
+:root{
+
+    --forest:#21642D;
+    --blue:#006AB9;
+    --orange:#EA5C1A;
+    --yellow:#F8C340;
+    --cream:#CCC4B1;
+    --sage:#4C7C55;
+    --brown:#583719;
+
+}
+
+
+/* ---------- Global ---------- */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Playfair Display', serif;
+
+    color:#222;
+
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero-title{
+
+    font-family:'Rock Salt', cursive;
+
+    color:var(--yellow);
+
+}
+
+.hero-subtitle{
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+
+
+/* ---------- Sections ---------- */
+
+.section-block{
+
+    max-width:1200px;
+
+    margin:100px auto;
+
+    padding:60px;
+
+    background:rgba(252,248,239,.90);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+
+/* ---------- Links ---------- */
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:var(--orange);
+
+}
