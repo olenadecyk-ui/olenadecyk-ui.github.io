@@ -1,0 +1,369 @@
+/* =========================
+   BASIC PAGE
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100%;
+
+    overflow-x: hidden;
+}
+
+body {
+    background: #d8d0b8;
+}
+
+
+/* =========================
+   MAIN CAMP
+   ========================= */
+
+.camp {
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LEFT SIGNPOST
+   ========================= */
+
+.signpost-container {
+    position: relative;
+
+    width: 25%;
+    min-width: 250px;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 20;
+
+    pointer-events: none;
+}
+
+
+/* Your hand-drawn signpost */
+
+.signpost {
+    width: 100%;
+    max-width: 430px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    pointer-events: none;
+
+    filter: drop-shadow(
+        0px 5px 8px rgba(0, 0, 0, 0.25)
+    );
+}
+
+
+/* =========================
+   INVISIBLE SIGN BUTTONS
+   ========================= */
+
+.sign-navigation {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+}
+
+
+/*
+   These are invisible boxes placed
+   over the individual signs.
+
+   Change the top/left/width/height
+   to match your drawing.
+*/
+
+.sign-link {
+    position: absolute;
+
+    display: block;
+
+    color: transparent;
+
+    text-decoration: none;
+
+    pointer-events: auto;
+
+    cursor: pointer;
+
+    /*
+    Uncomment temporarily while
+    positioning your buttons:
+
+    background: rgba(255, 0, 0, 0.2);
+    */
+}
+
+
+/* ABOUT */
+
+.sign-link[data-location="about"] {
+    top: 30%;
+    left: 20%;
+    width: 65%;
+    height: 9%;
+}
+
+
+/* LAB */
+
+.sign-link[data-location="lab"] {
+    top: 41%;
+    left: 20%;
+    width: 65%;
+    height: 9%;
+}
+
+
+/* SCHOOL */
+
+.sign-link[data-location="school"] {
+    top: 52%;
+    left: 20%;
+    width: 65%;
+    height: 9%;
+}
+
+
+/* BLOG */
+
+.sign-link[data-location="blog"] {
+    top: 63%;
+    left: 20%;
+    width: 65%;
+    height: 9%;
+}
+
+
+/* =========================
+   MAP
+   ========================= */
+
+.map-container {
+    position: relative;
+
+    flex: 1;
+
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+
+/* Hand-drawn map */
+
+.camp-map {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    user-select: none;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   MAP HOTSPOTS
+   ========================= */
+
+.map-area {
+    position: absolute;
+
+    z-index: 5;
+
+    cursor: pointer;
+
+    /*
+    Uncomment while positioning:
+
+    background: rgba(255, 0, 0, 0.25);
+    */
+}
+
+
+/*
+   These coordinates are examples.
+
+   You will change them depending on
+   where you draw your locations.
+*/
+
+
+.about-area {
+    left: 15%;
+    top: 15%;
+
+    width: 25%;
+    height: 20%;
+}
+
+
+.lab-area {
+    left: 45%;
+    top: 25%;
+
+    width: 25%;
+    height: 20%;
+}
+
+
+.school-area {
+    left: 20%;
+    top: 55%;
+
+    width: 30%;
+    height: 20%;
+}
+
+
+.blog-area {
+    left: 60%;
+    top: 65%;
+
+    width: 25%;
+    height: 20%;
+}
+
+
+/* =========================
+   MAP GLOW
+   ========================= */
+
+.map-glow {
+    position: absolute;
+
+    z-index: 4;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 214, 92, 0.75) 0%,
+            rgba(255, 214, 92, 0.35) 30%,
+            rgba(255, 214, 92, 0.12) 55%,
+            transparent 75%
+        );
+
+    filter: blur(5px);
+
+    transform: scale(0.9);
+}
+
+
+/* Positions of the glow */
+
+.about-glow {
+    left: 10%;
+    top: 10%;
+
+    width: 35%;
+    height: 30%;
+}
+
+
+.lab-glow {
+    left: 40%;
+    top: 20%;
+
+    width: 35%;
+    height: 30%;
+}
+
+
+.school-glow {
+    left: 15%;
+    top: 50%;
+
+    width: 40%;
+    height: 30%;
+}
+
+
+.blog-glow {
+    left: 55%;
+    top: 60%;
+
+    width: 35%;
+    height: 30%;
+}
+
+
+/* =========================
+   ACTIVE HOVER
+   ========================= */
+
+.map-glow.active {
+    opacity: 1;
+
+    transform: scale(1);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .camp {
+        flex-direction: column;
+    }
+
+    .signpost-container {
+        width: 100%;
+        height: 30vh;
+
+        min-width: 0;
+    }
+
+    .signpost {
+        height: 100%;
+        width: auto;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 70vh;
+    }
+}
