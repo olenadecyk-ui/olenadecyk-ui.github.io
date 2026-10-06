@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Olena's Camp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="camp">
+
+        <!-- =========================
+             LEFT: SIGNPOST NAVIGATION
+             ========================= -->
+
+        <aside class="signpost-container">
+
+            <img 
+                src="images/signpost.png" 
+                alt="Camp signpost"
+                class="signpost"
+            >
+
+            <!-- Invisible navigation buttons -->
+            <nav class="sign-navigation">
+
+                <a href="about.html"
+                   class="sign-link"
+                   data-location="about">
+                    About
+                </a>
+
+                <a href="lab.html"
+                   class="sign-link"
+                   data-location="lab">
+                    Lab
+                </a>
+
+                <a href="school.html"
+                   class="sign-link"
+                   data-location="school">
+                    School
+                </a>
+
+                <a href="blog.html"
+                   class="sign-link"
+                   data-location="blog">
+                    Blog
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =========================
+             RIGHT: CAMP MAP
+             ========================= -->
+
+        <section class="map-container">
+
+            <img
+                src="images/camp-map.png"
+                alt="Hand drawn map of the camp"
+                class="camp-map"
+            >
+
+
+            <!-- =========================
+                 INTERACTIVE MAP AREAS
+                 ========================= -->
+
+            <div class="map-area about-area"
+                 data-location="about">
+            </div>
+
+            <div class="map-area lab-area"
+                 data-location="lab">
+            </div>
+
+            <div class="map-area school-area"
+                 data-location="school">
+            </div>
+
+            <div class="map-area blog-area"
+                 data-location="blog">
+            </div>
+
+
+            <!-- Glow that appears on hover -->
+
+            <div class="map-glow about-glow"></div>
+            <div class="map-glow lab-glow"></div>
+            <div class="map-glow school-glow"></div>
+            <div class="map-glow blog-glow"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
